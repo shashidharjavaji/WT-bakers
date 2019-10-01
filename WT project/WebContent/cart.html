@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>WT CART</title>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+var item1=0,item2=0,item3=0,item4=0;
+function f()
+{
+	item1=item1+1
+	document.getElementById("item1").innerHTML=item1;
+	document.getElementById("total").innerHTML=item1+item2+item3+item4;
+}
+function f1()
+{ 	item2=item2+1;
+	document.getElementById("item2").innerHTML=item2;
+	document.getElementById("total").innerHTML=item1+item2+item3+item4;
+}
+function f2()
+{ 	item3=item3+1;
+	document.getElementById("item3").innerHTML=item3;
+	document.getElementById("total").innerHTML=item1+item2+item3+item4;
+}
+function f3()
+{ 	item4=item4+1;
+	document.getElementById("item4").innerHTML=item4;
+	document.getElementById("total").innerHTML=item1+item2+item3+item4;
+}
+function f4()
+{ 	
+	if(item1>0)
+	{ 	
+		document.getElementById("items1").innerHTML="BURGER  ="+item1+"<br>"+"  price ="+item1*30;
+	}
+	if(item2>0)
+	{ 	
+		document.getElementById("items2").innerHTML="FRENCH FRIES="+item2+"<br>"+"price ="+item2*40;
+	}
+	if(item3>0)
+	{ 	
+		document.getElementById("items3").innerHTML="ROLL ="+item3+" <br>"+"price ="+item3*50;
+	}
+	if(item4>0)
+	{ 	
+		document.getElementById("items4").innerHTML="SAMOSA ="+item4+"<br>"+"price ="+item4*55;
+	}
+	if(item1>0||item2>0||item3>0||item4>0)
+	{
+		document.getElementById("totalcost").innerHTML="total cost = "+"<br>"+(item1*30+item2*40+item3*50+item4*55);
+	}
+}
+</script>
+<body align="center" class="cart1">
+<h1 style="margin-top:40px;color:white;font-size:65px;">WELCOME TO AGI CAKES</h1>
+<table border="1">
+<tr>
+<td colspan="3"><h1> PLACE YOUR ORDER</h1>
+</td>
+</tr>
+<tr>
+	<td>BURGER:</td>
+	<td><input type="button" onclick="f()" value="add" class="cb" ></br></td>
+	<td>count:<h6 id ="item1"></h6></br></td>
+</tr>
+<tr>	
+	<td>FRENCH FRIES:</td>
+	<td><input type="button" onclick="f1()" value="add" class="cb" ></br></td>
+	<td>Count:<h6 id ="item2"></h6></br></td>
+</tr>
+<tr>	
+	<td>ROLL:</td>
+	<td><input type="button" onclick="f2()" value="add" class="cb"></br></td>
+	<td>Count:<h6 id ="item3"></h6></br></td>
+</tr>
+<tr>	
+	<td>SAMOSA:</td>
+	<td><input type="button" onclick="f3()" value="add" class="cb"></br></td>
+	<td>Count:<h6 id ="item4"></h6></br></td>
+</tr>
+<tr>
+<td colspan="3">
+TOTAL ITEMS:<h6 id="total"></h6>
+</td>
+</tr>	
+</table>
+</div>
+	<input type="button" onclick="f4()" value="view cart" class="cb"></br>
+<table>
+	<td>
+		<h6 id="items1"></h6>
+	</td>
+	<td>
+	<h6 id="items2"></h6>
+	</td>
+	<td>
+	<h6 id="items3"></h6>
+	</td>
+	<td>
+	<h6 id="items4"></h6>
+	</td>
+	<td>
+	<h4 id="totalcost"></h4>
+	</td>
+</table>
+<input type="button" class="cb" value="checkout">
+	</body>
+	</html>

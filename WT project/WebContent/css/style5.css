@@ -1,0 +1,36 @@
+table{
+	margin-left:130px;
+margin-top:100px;
+width:80%
+}
+.table1
+{
+position:relative;
+margin-top:200px;
+margin-left:140px;
+}
+td{
+	font-size:30px;
+}
+.cb{
+font-size:25px;
+}
+.cb:hover{
+transform:scale(1.8);
+}
+.cb:active{
+background-color:transparent;
+}	
+tr:nth-child(even) {background-color: 	pink}
+tr:nth-child(odd) {background-color: cyan;}
+.cart1
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../bg.jpg);
+animation:cart_animi 20s linear infinite;
+}
+@keyframes cart_animi
+{
+0% {background-position:left}
+100% {background-position:right}
+}	
+	

@@ -1,0 +1,97 @@
+*{
+margin:0;
+padding: 0;
+font-family:Century Gothic;
+}
+html{
+	 scroll: smooth;
+}
+header,.row{
+
+	transition:2s ease;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../smain4.jpg);
+	height:100vh;
+	background-size: cover;
+	animation:cart_animi  10s linear infinite;	
+}	
+html{
+	 scroll-behavior: smooth;
+}
+.slider{
+	width:50%;
+	height:600px;
+	margin:auto;
+	overflow:hidden;
+}
+.slider figure img{
+	width:20%;
+	height:600px;
+	float:left;
+}
+.slider figure 
+{
+position:relative;
+width:500%;
+margin:0px;
+left:0px;
+animation: ss 20s infinite linear;
+}
+
+@keyframes ss{
+	0%{left:0%;}
+	15%{left:0%;}
+	20%{left:-100%;}
+	35%{left:-100%;}
+	40%{left:-200%;}
+	55%{left:-200%;}
+	60%{left:-300%;}
+	75%{left:-300%;}
+	80%{left:-400%;}
+	95%{left:-400%;}
+	100%{left:-500%;}
+}
+
+ul{
+	transition:1.2s ease;
+	float:right;
+	position:fixed;
+	margin-left:18%;
+	list-style-type:none;
+	margin-top:25px;
+
+}
+ul li{
+	display:inline-block;
+	transition:0.5s ease;
+}
+ul li a{
+	text-decoration:none;
+	color:brown;
+	padding: 15px 40px;
+	border:1px solid transparent;
+	background-color:white;
+	transition:0.4s ease;
+}
+ul li a:hover{
+	background-color:transparent;
+	color:yellow;
+	padding:10px 30px;
+	font-size:25px;
+}
+
+
+.main{
+	max-width:1200px;
+	margin:auto;
+}
+.title{ 
+transition:1.0s ease;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.title h1{
+	font-size:70px;
+	color:#fff;
+}
